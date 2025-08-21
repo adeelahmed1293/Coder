@@ -18,7 +18,7 @@ import {
 import { useNavigate } from 'react-router-dom'; 
 
 // Get backend URL from environment variables (Vite uses VITE_ prefix)
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL 
+const BACKEND_URL = "https://coder-kohl-eight.vercel.app";
 
 // Enhanced Navbar Component for Chat
 const ChatNavbar = ({ onToggleSidebar, onLogout, scrollY, isScrolling }) => {
