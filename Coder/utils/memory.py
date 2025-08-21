@@ -13,6 +13,3 @@ checkpointer = MongoDBSaver(client)
 
 db = client["AICoder"]
 user_collection = db["users"]
-
-
-user_collection.insert_one({"email":"user@email.com"})
