@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Lock, Eye, EyeOff, ArrowRight, AlertCircle, CheckCircle, Info, X, Check } from 'lucide-react';
 import { useNavigate } from 'react-router-dom'; // 👈 Import navigate
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "https://coder-325gg5nz9-adeel1293satti-3082s-projects.vercel.app";
 
 export default function Signup() {
   const [form, setForm] = useState({ name: '', email: '', password: '', confirm: '' });
