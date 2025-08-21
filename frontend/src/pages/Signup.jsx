@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Lock, Eye, EyeOff, ArrowRight, AlertCircle, CheckCircle, Info, X, Check } from 'lucide-react';
 import { useNavigate } from 'react-router-dom'; // 👈 Import navigate
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "https://coder-325gg5nz9-adeel1293satti-3082s-projects.vercel.app";
+const BACKEND_URL = "https://coder-kohl-eight.vercel.app";
 
 export default function Signup() {
   const [form, setForm] = useState({ name: '', email: '', password: '', confirm: '' });
@@ -40,7 +40,7 @@ export default function Signup() {
   showToast("Creating your account...", "info"); // 👈 added like login
 
   try {
-    const res = await fetch("https://coder-kohl-eight.vercel.app/auth/signup", {
+    const res = await fetch(`${BACKEND_URL}/auth/signup`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
