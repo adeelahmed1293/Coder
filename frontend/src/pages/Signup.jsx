@@ -40,7 +40,7 @@ export default function Signup() {
   showToast("Creating your account...", "info"); // 👈 added like login
 
   try {
-    const res = await fetch(`${BACKEND_URL}/auth/signup`, {
+    const res = await fetch("https://coder-kohl-eight.vercel.app/auth/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
