@@ -9,8 +9,7 @@ app = FastAPI()
 
 # Allow frontend origin
 origins = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
+    "https://coder-mver-mpm8iq05m-adeel1293satti-3082s-projects.vercel.app/",
 ]
 
 app.add_middleware(
