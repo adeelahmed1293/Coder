@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Lock, Eye, EyeOff, ArrowRight, AlertCircle, CheckCircle, Info, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom'; // 👈 Import for navigation
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL 
+const BACKEND_URL = "https://coder-kohl-eight.vercel.app";
 
 export default function Login() {
   const [email, setEmail] = useState('');
