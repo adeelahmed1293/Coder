@@ -1,0 +1,24 @@
+[project]
+name = "coder"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bcrypt>=4.3.0",
+    "duckduckgo-search>=8.1.1",
+    "fastapi>=0.116.1",
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.27",
+    "langchain-core>=0.3.74",
+    "langchain-groq>=0.3.7",
+    "langchain-openai>=0.3.30",
+    "langchain-tavily>=0.2.11",
+    "langgraph>=0.6.5",
+    "langgraph-checkpoint-mongodb>=0.1.4",
+    "passlib[bcrypt]>=1.7.4",
+    "pydantic[email]>=2.11.7",
+    "pyjwt>=2.10.1",
+    "python-dotenv>=1.1.1",
+    "uvicorn[standard]>=0.35.0",
+]
